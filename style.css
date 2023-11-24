@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f1f1f1;
-  /* overflow: hidden; */
 }
 
 body::-webkit-scrollbar {
@@ -381,7 +380,6 @@ nav {
 
 .dc-dropdown button {
   display: flex;
-  /* padding: 6px; */
   align-items: center;
   gap: 8px;
   padding-left: 12px;
@@ -449,7 +447,7 @@ nav {
   width: 60%;
   padding: 8px;
   flex-direction: column;
-  /* gap: 16px; */
+  gap: 16px;
   border-radius: 18px;
   border: 1px solid var(--stroke-s-50, #dbdbdb);
   background: var(--White, #fff);
@@ -468,7 +466,7 @@ nav {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  /* line-height: 140%; */
+  line-height: 140%;
 }
 
 .sec1 p:last-child {
@@ -477,7 +475,6 @@ nav {
   font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  /* line-height: 140%; */
 }
 
 .section--2 img {
@@ -514,7 +511,7 @@ nav {
   background-color: #1a1a1a;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  width: 20%;
+  width: 0%;
 }
 
 .section-dropDown {
@@ -542,6 +539,7 @@ nav {
 
 .step--header {
   display: flex;
+  align-items: center;
 }
 
 .step--heading {
@@ -553,6 +551,30 @@ nav {
   font-weight: 600;
   line-height: 140%;
 }
+
+#step1,
+#step2,
+#step3,
+#step4,
+#step5 {
+  width: 20px;
+  height: 20px;
+}
+
+/* check box start */
+.rotate {
+  animation: spin 1s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(270deg);
+  }
+}
+/* check box end */
 
 .first--step--dropdown,
 .second-step-dropdown,

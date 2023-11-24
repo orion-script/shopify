@@ -3,13 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
   const sectionDropdown = document.querySelector(".section-dropDown");
 
   dropdownToggle.addEventListener("click", function () {
-    // Toggle the visibility of the dropdown
     sectionDropdown.classList.toggle("show-dropdown");
   });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Get radio buttons
+  // Get checkboxes
   const step1Radio = document.getElementById("step1");
   const step2Radio = document.getElementById("step2");
   const step3Radio = document.getElementById("step3");
@@ -23,12 +22,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const dcDropdown = document.querySelector(".dc-dropdown");
 
   nottContainer.addEventListener("click", function () {
-    // Toggle the visibility of the nott-dropdown
     nottDropdown.classList.toggle("show-dropdown");
   });
 
   dcDropdownToggle.addEventListener("click", function () {
-    // Toggle the visibility of the dc-dropdown
     dcDropdown.classList.toggle("show-dropdown");
   });
 
@@ -51,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     fourthStepDropdown.style.display = "none";
     fifthStepDropdown.style.display = "none";
 
-    dropdown.style.display = "flex"; // You can change this to "block" if needed
+    dropdown.style.display = "flex";
 
     // Update the progress bar width
     progressBar.style.width = completionPercentage + "%";
@@ -69,34 +66,112 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Add click event listener to the first radio button
   step1Radio.addEventListener("click", function () {
-    enableDropdown(secondStepDropdown, 20, 1);
-    console.log("1");
+    const currentSrc = step1Radio.src;
+    if (currentSrc.endsWith("checked.svg")) {
+      step1Radio.src = "/assets/Component 14.svg";
+      enableDropdown(firstStepDropdown, 0, 0);
+      console.log("Unchecked");
+    } else {
+      step1Radio.src = "/assets/Component 14.svg";
+      step1Radio.classList.add("rotate");
+      setTimeout(function () {
+        step1Radio.src = "/assets/spin.svg";
+      }, 250);
+      setTimeout(function () {
+        step1Radio.classList.remove("rotate");
+        step1Radio.src = "/assets/checked.svg";
+        enableDropdown(secondStepDropdown, 20, 1);
+        console.log("Checked");
+      }, 500);
+    }
   });
 
-  // Add click event listener to the second radio button
+  // click event listener for the second checkbox
   step2Radio.addEventListener("click", function () {
-    enableDropdown(thirdStepDropdown, 40, 2);
-    console.log("2");
+    const currentSrc = step2Radio.src;
+    if (currentSrc.endsWith("checked.svg")) {
+      step2Radio.src = "/assets/Component 14.svg";
+      enableDropdown(secondStepDropdown, 0, 0);
+      console.log("Unchecked");
+    } else {
+      step2Radio.src = "/assets/Component 14.svg";
+      step2Radio.classList.add("rotate");
+      setTimeout(function () {
+        step2Radio.src = "/assets/spin.svg";
+      }, 250);
+      setTimeout(function () {
+        step2Radio.classList.remove("rotate");
+        step2Radio.src = "/assets/checked.svg";
+        enableDropdown(thirdStepDropdown, 40, 2);
+        console.log("Checked");
+      }, 500);
+    }
   });
 
-  // Add click event listener to the third radio button
+  // Add click event listener to the third checkbox
   step3Radio.addEventListener("click", function () {
-    enableDropdown(fourthStepDropdown, 60, 3);
-    console.log("3");
+    const currentSrc = step3Radio.src;
+    if (currentSrc.endsWith("checked.svg")) {
+      step3Radio.src = "/assets/Component 14.svg";
+      enableDropdown(thirdStepDropdown, 40, 2);
+      console.log("Unchecked");
+    } else {
+      step3Radio.src = "/assets/Component 14.svg";
+      step3Radio.classList.add("rotate");
+      setTimeout(function () {
+        step3Radio.src = "/assets/spin.svg";
+      }, 250);
+      setTimeout(function () {
+        step3Radio.classList.remove("rotate");
+        step3Radio.src = "/assets/checked.svg";
+        enableDropdown(fourthStepDropdown, 60, 3);
+        console.log("Checked");
+      }, 500);
+    }
   });
 
-  // Add click event listener to the fourth radio button
+  // Add click event listener to the fourth checkbox
   step4Radio.addEventListener("click", function () {
-    enableDropdown(fifthStepDropdown, 80, 4);
-    console.log("4");
+    const currentSrc = step4Radio.src;
+    if (currentSrc.endsWith("checked.svg")) {
+      step4Radio.src = "/assets/Component 14.svg";
+      enableDropdown(fourthStepDropdown, 60, 3);
+      console.log("Unchecked");
+    } else {
+      step4Radio.src = "/assets/Component 14.svg";
+      step4Radio.classList.add("rotate");
+      setTimeout(function () {
+        step4Radio.src = "/assets/spin.svg";
+      }, 250);
+      setTimeout(function () {
+        step4Radio.classList.remove("rotate");
+        step4Radio.src = "/assets/checked.svg";
+        enableDropdown(fifthStepDropdown, 80, 4);
+        console.log("Checked");
+      }, 500);
+    }
   });
 
-  // Add click event listener to the fifth radio button
+  // Add click event listener to the fifth checkbox
   step5Radio.addEventListener("click", function () {
-    enableDropdown(fifthStepDropdown, 100, 5);
-    console.log("5");
-    //   updateProgressBar(100); // Update the progress bar separately
+    const currentSrc = step5Radio.src;
+    if (currentSrc.endsWith("checked.svg")) {
+      step5Radio.src = "/assets/Component 14.svg";
+      enableDropdown(fifthStepDropdown, 80, 4);
+      console.log("Unchecked");
+    } else {
+      step5Radio.src = "/assets/Component 14.svg";
+      step5Radio.classList.add("rotate");
+      setTimeout(function () {
+        step5Radio.src = "/assets/spin.svg";
+      }, 250);
+      setTimeout(function () {
+        step5Radio.classList.remove("rotate");
+        step5Radio.src = "/assets/checked.svg";
+        enableDropdown(fifthStepDropdown, 100, 5);
+        console.log("Checked");
+      }, 500);
+    }
   });
 });
