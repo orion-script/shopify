@@ -76,18 +76,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSrc.endsWith("checked.svg")) {
       step1Radio.src = "/assets/Component 14.svg";
       enableDropdown(firstStepDropdown, 0, 0);
-      console.log("Unchecked");
     } else {
       step1Radio.src = "/assets/Component 14.svg";
-      step1Radio.classList.add("rotate");
       setTimeout(function () {
         step1Radio.src = "/assets/spin.svg";
+        step1Radio.classList.add("rotate");
       }, 250);
       setTimeout(function () {
         step1Radio.classList.remove("rotate");
         step1Radio.src = "/assets/checked.svg";
         enableDropdown(secondStepDropdown, 20, 1);
-        console.log("Checked");
       }, 500);
     }
   });
@@ -98,18 +96,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSrc.endsWith("checked.svg")) {
       step2Radio.src = "/assets/Component 14.svg";
       enableDropdown(secondStepDropdown, 0, 0);
-      console.log("Unchecked");
     } else {
       step2Radio.src = "/assets/Component 14.svg";
-      step2Radio.classList.add("rotate");
       setTimeout(function () {
         step2Radio.src = "/assets/spin.svg";
+        step2Radio.classList.add("rotate");
       }, 250);
       setTimeout(function () {
         step2Radio.classList.remove("rotate");
         step2Radio.src = "/assets/checked.svg";
         enableDropdown(thirdStepDropdown, 40, 2);
-        console.log("Checked");
       }, 500);
     }
   });
@@ -120,18 +116,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSrc.endsWith("checked.svg")) {
       step3Radio.src = "/assets/Component 14.svg";
       enableDropdown(thirdStepDropdown, 40, 2);
-      console.log("Unchecked");
     } else {
       step3Radio.src = "/assets/Component 14.svg";
-      step3Radio.classList.add("rotate");
       setTimeout(function () {
         step3Radio.src = "/assets/spin.svg";
+        step3Radio.classList.add("rotate");
       }, 250);
       setTimeout(function () {
         step3Radio.classList.remove("rotate");
         step3Radio.src = "/assets/checked.svg";
         enableDropdown(fourthStepDropdown, 60, 3);
-        console.log("Checked");
       }, 500);
     }
   });
@@ -142,18 +136,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSrc.endsWith("checked.svg")) {
       step4Radio.src = "/assets/Component 14.svg";
       enableDropdown(fourthStepDropdown, 60, 3);
-      console.log("Unchecked");
     } else {
       step4Radio.src = "/assets/Component 14.svg";
-      step4Radio.classList.add("rotate");
       setTimeout(function () {
         step4Radio.src = "/assets/spin.svg";
+        step4Radio.classList.add("rotate");
       }, 250);
       setTimeout(function () {
         step4Radio.classList.remove("rotate");
         step4Radio.src = "/assets/checked.svg";
         enableDropdown(fifthStepDropdown, 80, 4);
-        console.log("Checked");
       }, 500);
     }
   });
@@ -164,18 +156,16 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentSrc.endsWith("checked.svg")) {
       step5Radio.src = "/assets/Component 14.svg";
       enableDropdown(fifthStepDropdown, 80, 4);
-      console.log("Unchecked");
     } else {
       step5Radio.src = "/assets/Component 14.svg";
-      step5Radio.classList.add("rotate");
       setTimeout(function () {
         step5Radio.src = "/assets/spin.svg";
+        step5Radio.classList.add("rotate");
       }, 250);
       setTimeout(function () {
         step5Radio.classList.remove("rotate");
         step5Radio.src = "/assets/checked.svg";
         enableDropdown(fifthStepDropdown, 100, 5);
-        console.log("Checked");
       }, 500);
     }
   });

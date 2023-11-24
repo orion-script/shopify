@@ -656,7 +656,7 @@ nav {
 
   .cont {
     width: 40%;
-    background-color: transparent;
+    background-color: none;
   }
 
   .dc-btn {
