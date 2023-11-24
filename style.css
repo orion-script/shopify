@@ -431,6 +431,11 @@ nav {
   align-items: start;
 }
 
+#dropdownToggle {
+  width: 30px;
+  height: 30px;
+}
+
 .sec1 p:first-child {
   color: var(--font-dark, #303030);
   font-family: Inter;

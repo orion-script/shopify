@@ -4,6 +4,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   dropdownToggle.addEventListener("click", function () {
     sectionDropdown.classList.toggle("show-dropdown");
+    if (sectionDropdown.classList.contains("show-dropdown")) {
+      dropdownToggle.src = "/assets/ups.svg";
+    } else {
+      dropdownToggle.src = "/assets/down.svg";
+    }
   });
 });
 
