@@ -16,6 +16,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const step4Radio = document.getElementById("step4");
   const step5Radio = document.getElementById("step5");
 
+  const nottContainer = document.querySelector(".nott-container");
+  const dcDropdownToggle = document.querySelector(".cont");
+
+  const nottDropdown = document.querySelector(".nott-dropdown");
+  const dcDropdown = document.querySelector(".dc-dropdown");
+
+  nottContainer.addEventListener("click", function () {
+    // Toggle the visibility of the nott-dropdown
+    nottDropdown.classList.toggle("show-dropdown");
+  });
+
+  dcDropdownToggle.addEventListener("click", function () {
+    // Toggle the visibility of the dc-dropdown
+    dcDropdown.classList.toggle("show-dropdown");
+  });
+
   // Get progress bar and completion text
   const progressBar = document.querySelector(".progress-bar");
   const completionText = document.querySelector(".level-container p");
@@ -56,25 +72,31 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add click event listener to the first radio button
   step1Radio.addEventListener("click", function () {
     enableDropdown(secondStepDropdown, 20, 1);
+    console.log("1");
   });
 
   // Add click event listener to the second radio button
   step2Radio.addEventListener("click", function () {
     enableDropdown(thirdStepDropdown, 40, 2);
+    console.log("2");
   });
 
   // Add click event listener to the third radio button
   step3Radio.addEventListener("click", function () {
     enableDropdown(fourthStepDropdown, 60, 3);
+    console.log("3");
   });
 
   // Add click event listener to the fourth radio button
   step4Radio.addEventListener("click", function () {
     enableDropdown(fifthStepDropdown, 80, 4);
+    console.log("4");
   });
 
   // Add click event listener to the fifth radio button
   step5Radio.addEventListener("click", function () {
     enableDropdown(fifthStepDropdown, 100, 5);
+    console.log("5");
+    //   updateProgressBar(100); // Update the progress bar separately
   });
 });

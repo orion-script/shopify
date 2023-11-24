@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>shopify</title>
   </head>
   <body>
     <nav>
@@ -23,12 +23,30 @@
         <div class="nott-container">
           <img src="/assets/nott.svg" alt="" />
         </div>
-        <div class="cont">
+        <div class="cont" tabindex="0">
           <span>Davii Collections</span>
           <button class="dc-btn">DC</button>
         </div>
       </div>
     </nav>
+
+    <!-- Nottification dropdown start -->
+    <div class="nott-dropdown">
+      <div class="nott-text--btn">
+        <p class="alerts">Alerts</p>
+
+        <div class="nott-icons-cont">
+          <img src="/assets/FilterMajor.svg" alt="" />
+          <img src="/assets/CircleTickMajor.svg" alt="" class="circletick" />
+        </div>
+      </div>
+      <div class="nott--text">
+        <p>Alerts about your store and account will show here</p>
+      </div>
+    </div>
+    <!-- Nottification dropdown end -->
+
+    <!-- DC dropdown start -->
     <div class="dc-dropdown">
       <div class="dc-head">
         <div class="dc-textt">
@@ -38,17 +56,28 @@
         <img src="/assets/check.svg" alt="" />
       </div>
 
-      <div class="all-story">
+      <div class="all-story" tabindex="0">
         <img src="/assets/Icons.svg" alt="" />
         <p>All stores</p>
       </div>
+      <hr class="hr" />
 
       <p class="teee">Help Center</p>
       <p class="teee">Changelog</p>
       <p class="teee">Community forums</p>
       <p class="teee">Hire a Shopify Partner</p>
       <p class="teee">Keyboard shortcuts</p>
+
+      <hr class="hr" />
+
+      <!-- <div class="names"> -->
+      <p class="name">David Micheal</p>
+      <p class="email">davidmicheal@gmail.com</p>
+      <!-- </div> -->
+      <p class="manage">Manage account</p>
+      <button>Log out</button>
     </div>
+    <!-- DC dropdown ends -->
 
     <div class="section--1">
       <p>Extend your trial for $1/month for 3 months on select plans.</p>
@@ -82,7 +111,7 @@
         <!-- First step -->
         <div class="first-step">
           <div class="step--header">
-            <input type="radio" name="step" id="step1" />
+            <input type="checkbox" name="step" id="step1" />
             <p class="step--heading">Customize your online store</p>
           </div>
 
@@ -106,7 +135,7 @@
         <!-- second step -->
         <div class="second-step">
           <div class="step--header">
-            <input type="radio" name="step" id="step2" />
+            <input type="checkbox" name="step" id="step2" />
             <p class="step--heading">Add your first product</p>
           </div>
 
@@ -133,7 +162,7 @@
         <!-- third step -->
         <div class="third-step">
           <div class="step--header">
-            <input type="radio" name="" id="step3" />
+            <input type="checkbox" name="step" id="step3" />
             <p class="step--heading">Add a custom domain</p>
           </div>
 
@@ -157,7 +186,7 @@
         <!-- fourth step -->
         <div class="fourth-step">
           <div class="step--header">
-            <input type="radio" name="" id="step4" />
+            <input type="checkbox" name="step" id="step4" />
             <p class="step--heading">Name your store</p>
           </div>
 
@@ -181,7 +210,7 @@
         <!-- Fifth step -->
         <div class="fifth-step">
           <div class="step--header">
-            <input type="radio" name="" id="step5" />
+            <input type="checkbox" name="step" id="step5" />
             <p class="step--heading">Set up a payment provider</p>
           </div>
 
